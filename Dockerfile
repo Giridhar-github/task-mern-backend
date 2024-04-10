@@ -7,7 +7,7 @@ WORKDIR /
 # Copy the application files into the working directory
 COPY ["package.json", "package-lock.json*", "./"]
 # Install the application dependencies
-RUN npm install -g npm@10.5.1
+RUN "npm install -g npm@10.5.1"
 
 EXPOSE 8000
 # Define the entry point for the container
