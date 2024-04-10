@@ -3,7 +3,7 @@ FROM node:18
 
 ENV NODE_ENV=production
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /
 # Copy the application files into the working directory
 COPY ["package.json", "package-lock.json*", "./"]
 # Install the application dependencies
