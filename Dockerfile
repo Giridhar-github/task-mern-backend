@@ -11,7 +11,7 @@ WORKDIR /
 COPY package*.json ./
 
 # Install application dependencies
-RUN npm install
+RUN npm install -g npm@10.5.1
 
 # Expose port 8000
 EXPOSE 8000
